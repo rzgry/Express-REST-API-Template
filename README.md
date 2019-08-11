@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/rzgry/Express-REST-API-Template.svg?branch=master)](https://travis-ci.com/rzgry/Express-REST-API-Template)
+
 # Express-Boilerplate
 
 Simple express boilerplate based off of [express-generator](https://expressjs.com/en/starter/generator.html). Includes eslint and prettier for code formatting, Nodemon for automatic server restarting, and Jest for testing.
