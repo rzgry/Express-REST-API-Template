@@ -11,9 +11,11 @@ Install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vs
 Add the following to your vscode settings
 
 ```
-"editor.formatOnSave": true, // run pritter and eslint on save
-"javascript.format.enable": false, // disable default vscode javascript formatter
-"prettier.eslintIntegration": true, // use eslint with prettier
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 ```
 
 ## Getting Started
