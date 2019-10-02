@@ -1,13 +1,12 @@
 #!/usr/bin/env node
 
 
-
 /**
  * Module dependencies.
  */
+
 const http = require('http');
 const app = require('../app');
-
 
 /**
  * Normalize a port into a number, string, or false.
@@ -44,6 +43,13 @@ app.set('port', port);
 const server = http.createServer(app);
 
 /**
+ * Get port from environment and store in Express.
+ */
+
+const port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+/**
  * Event listener for HTTP server "error" event.
  */
 
@@ -70,13 +76,21 @@ function onError(error) {
 }
 
 /**
+ * Create HTTP server.
+ */
+
+const server = http.createServer(app);
+
+/**
  * Event listener for HTTP server "listening" event.
  */
 
 function onListening() {
   const addr = server.address();
+
   const bind = typeof addr === 'string' ? `pipe  ${addr}` : `port ${addr.port}`;
   console.log(`Listening on  ${bind}`);
+
 }
 
 /**
