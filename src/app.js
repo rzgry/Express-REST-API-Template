@@ -23,7 +23,7 @@ app.use((req, res, next) => {
   next(createError.NotFound());
 });
 
-// pass any errors to the error handler
+// pass any unhandled errors to the error handler
 app.use(errorHandler);
 
 module.exports = app;

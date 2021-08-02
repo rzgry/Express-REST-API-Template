@@ -14,6 +14,11 @@ describe('app', () => {
   });
 
   describe('GET /404', () => {
+    beforeEach(() => {
+      // Avoid polluting the test output with 404 error messages
+      jest.spyOn(console, 'error').mockImplementation(() => {});
+    });
+
     it('should respond to the GET method with a 404 for a route that does not exist', async () => {
       const response = await request(app).get('/404');
       expect(response.statusCode).toBe(404);

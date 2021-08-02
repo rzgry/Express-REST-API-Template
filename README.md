@@ -1,49 +1,44 @@
-[![Build Status](https://travis-ci.com/rzgry/Express-REST-API-Template.svg?branch=master)](https://travis-ci.com/rzgry/Express-REST-API-Template)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![Blazing Fast](https://img.shields.io/badge/speed-blazing%20%F0%9F%94%A5-brightgreen.svg)](https://twitter.com/acdlite/status/974390255393505280)
 
-# Express-Boilerplate
+# Express-REST-API-Template
 
-Simple express boilerplate based off of [express-generator](https://expressjs.com/en/starter/generator.html). Includes eslint and prettier for code formatting, Nodemon for automatic server restarting, and Jest for testing.
-
-## Setting up VS Code Development Environment
-
-Install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) vscode extensions
-
-Add the following to your vscode settings
-
-```
-  "editor.formatOnSave": true,
-  "eslint.autoFixOnSave": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-```
+Simple express boilerplate based off of [express-generator](https://expressjs.com/en/starter/generator.html). Includes [eslint](https://eslint.org) and [prettier](https://prettier.io) for linting/code formatting, [nodemon](https://github.com/remy/nodemon) for automatic server restarting, and [Jest](https://jestjs.io) for testing.
 
 ## Getting Started
 
-Install dependencies
+### Install dependencies
 
 ```
 npm install
 ```
 
-Running in development
+### Running in development
 
 ```
 npm run dev
 ```
 
-Running in production
+### Running in production
 
 ```
 npm start
 ```
 
-Running tests / linting
+Runs on localhost:3000 by default but can be configured using the `PORT` environment variable.
+
+### Running tests
 
 ```
 npm test
 
+# Watch repo
+npm run test:watch
+```
+
+### Linting
+```
 npm run lint
+
+# fix issues
+npm run lint:fix
 ```
