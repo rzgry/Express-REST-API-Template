@@ -24,7 +24,7 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-prettier": "^3.4.0",
     "jest": "^24.9.0",
-    "nodemon": "^2.0.12",
+    "nodemon": "^2.0.20",
     "supertest": "^3.4.2"
   },
   "jest": {
